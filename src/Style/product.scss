@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.product-card {
+  width: 90%;
+  outline: solid;
+}
+.product-card img {
+  width: 100px;
+}
+.quantity-container {
+  display: flex;
+  width: 150px;
+  margin: 10px auto;
+  justify-content: center;
+}
+.quantity-container button {
+  margin: 0 5px;
+  padding: 0 10px;
+}

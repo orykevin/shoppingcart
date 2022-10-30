@@ -1,0 +1,131 @@
+
+.App{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 50px;
+    .header{
+        padding-top: 15px;
+        margin-left: 50px;
+    }
+    button{
+        cursor: pointer;
+    }
+}
+.cart-btn{
+    position: absolute;
+    background-image: linear-gradient(#614385,#516395);
+    width: 200px;
+    height: 48px;
+    border-radius: 25px;
+    top: 10px;
+    right: -165px;
+    padding: 5px 10px;
+    cursor: pointer;
+    img{
+        width: 28px;
+        margin: 9px 2px 0 7px ;
+        transform: scaleX(-1);
+    }
+    span{
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        background-color: rgb(49, 129, 249);
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        color: white;
+        line-height: 24px;
+    }
+    p{
+        font-size: 18px;
+        color: white;
+        position: absolute;
+        top: 15px;
+        right: 65px;
+    }
+}
+.product-container{
+    width: 80%;
+    margin:  0 auto;
+    max-width: 680px;
+    padding: 30px 10px;
+}
+
+.cart-container{
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    top: 0;
+    right: -50%;
+    background: white;
+    background-image: linear-gradient(#614385,#516395);
+    display: block;
+    .cart-header{
+        text-align: center;
+        font-size: 28px;
+        margin: 20px 0;
+        color: white;
+    }
+    .cart-ico{
+        position: absolute;
+        width: 28px;
+        margin: 9px 2px 0 7px ;
+        transform: scaleX(-1);
+        top: 15px;
+        left:10px;
+        cursor: pointer;
+    }
+}
+.grand-container{
+    position: absolute;
+    bottom: 50px;
+    h4{
+        font-size: 20px;
+        color: white;
+        margin: 0 20px;
+    }
+}
+.icon-open{
+    animation: icon-open 300ms linear forwards;
+}
+.cart-open{
+    animation: cart-open 300ms linear forwards;
+}
+.cart-close{
+    animation: cart-close 300ms linear forwards;
+}
+.popping{
+    animation: popping 900ms 1 linear ;
+}
+
+@keyframes cart-open {
+    from{
+        right: -50%;
+    }
+    to{
+        right: 0;
+    }
+}
+@keyframes cart-close {
+    from{   
+        right: 0px
+    }to{    
+        right: -50%;
+    }
+}
+@keyframes popping {
+    0%{
+        right: -165px;
+    }25%{
+        right: -40px;
+    }50%{
+        right: -40px;
+    }100%{
+        right: -165px;
+    }
+}
